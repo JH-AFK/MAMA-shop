@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TitleScreenManager : MonoBehaviour
+public class TitleSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class TitleScreenManager : MonoBehaviour
         
     }
 
-    void QuitButton()
+    public void QuitButton()
     {
         Application.Quit(); //Will make the quitting better
     }
