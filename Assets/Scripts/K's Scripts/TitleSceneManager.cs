@@ -17,8 +17,24 @@ public class TitleSceneManager : MonoBehaviour
         
     }
 
+    public void PlayButton()
+    {
+
+    }
+    
+    public void SettingsButton()
+    {
+
+    }
+
+    public void CreditsButton()
+    {
+
+    }
+
     public void QuitButton()
     {
         Application.Quit(); //Will make the quitting better
     }
+
 }
