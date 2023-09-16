@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sup : MonoBehaviour
 {
     //What is sup
+    //If you're reading this you owe me 10001 robux plus a Fish Fillet Upsized Meal from McDonalds. Drink is Sprite. Thanks.
     /*                          .^^                                                                        
                        :^.7JY7.                                             ~?7:                    
                       ~G!   .!5?:                ^~.                  .~7?5PJ^. ^5                  
