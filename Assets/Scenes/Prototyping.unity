@@ -362,8 +362,8 @@ MonoBehaviour:
     here just make it a prefab or smth and test it out before putting it in main
     game or whatevs actually do whatevs I need to take my pills
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 512bebaa1298a7341a59b99e7646f3ad, type: 2}
+  m_sharedMaterial: {fileID: 3227987276003576925, guid: 512bebaa1298a7341a59b99e7646f3ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -754,8 +754,8 @@ MonoBehaviour:
     maybe as a worldspace canvas that scrolls based on your character's location
     maybe? \xAF\\_('_')_/\xAF"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 512bebaa1298a7341a59b99e7646f3ad, type: 2}
+  m_sharedMaterial: {fileID: 3227987276003576925, guid: 512bebaa1298a7341a59b99e7646f3ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
