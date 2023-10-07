@@ -5708,7 +5708,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 335932539}
         m_TargetAssemblyTypeName: TitleSceneManager, Assembly-CSharp
-        m_MethodName: QuitButton
+        m_MethodName: PlayButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

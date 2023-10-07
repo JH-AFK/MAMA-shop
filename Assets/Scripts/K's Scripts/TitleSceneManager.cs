@@ -24,6 +24,7 @@ public class TitleSceneManager : MonoBehaviour
 
     public void PlayButton()
     {
+        SceneManager.LoadScene("MainScene");
         ButtonClickFeedback();
         DisableButton();
     }
