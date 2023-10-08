@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87693deb175a4248a5c2d89aaf03b49, type: 3}
+  m_Name: Gun
+  m_EditorClassIdentifier: 
+  itemName: Gun
+  description: A (toy) gun that is popular with kids. Has 3 foam bullets that are
+    easily lost.
+  image: {fileID: 1972435925, guid: d213f26f392f9cc49a6a3d9a0d726775, type: 3}
+  cost: 0
+  boxQuantity: 0
+  boxes: 0
+  inventoryAmount: 0
