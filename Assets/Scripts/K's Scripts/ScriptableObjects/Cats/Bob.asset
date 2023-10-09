@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4254576e400078c4cbf866630bee8fff, type: 3}
+  m_Name: Bob
+  m_EditorClassIdentifier: 
+  catName: Bob
+  taskName: Popsicles Please
+  taskType: Item
+  requestedItem: Pussy Pop
+  dialogue: 
+  taskDescription: '"I heard that Pussy Pop is releasing a new ''Sardine-Cranberry''
+    flavour. Could you get some for me?"'
+  taskReward: Ice Cream Sandwich Skin
+  taskStatus: 0/1 Popsicles
+  numOfRequestedItems: 0
+  fullCat: {fileID: 0}
+  requestedItemPic: {fileID: -1213842879, guid: d213f26f392f9cc49a6a3d9a0d726775, type: 3}
+  headShot: {fileID: -783521536, guid: 541fbe12f2c653745a3756114b52be04, type: 3}

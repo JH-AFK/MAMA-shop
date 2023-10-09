@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4254576e400078c4cbf866630bee8fff, type: 3}
+  m_Name: Pa
+  m_EditorClassIdentifier: 
+  catName: Pa
+  taskName: Go-To Shop
+  taskType: Customer
+  requestedItem: Customers
+  dialogue: 
+  taskDescription: '"Kid, we need customers to keep this business afloat... Attract
+    some and I''ll give ya a reward."'
+  taskReward: 1 Gacha Ticket<br>5 Gems
+  taskStatus: 1/100 Customers
+  numOfRequestedItems: 0
+  fullCat: {fileID: 0}
+  requestedItemPic: {fileID: 0}
+  headShot: {fileID: -55179029, guid: 541fbe12f2c653745a3756114b52be04, type: 3}

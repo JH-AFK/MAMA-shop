@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4254576e400078c4cbf866630bee8fff, type: 3}
+  m_Name: Chow
+  m_EditorClassIdentifier: 
+  catName: Chow
+  taskName: Gift For Grandma
+  taskType: Item
+  requestedItem: Potato Soft
+  dialogue: 
+  taskDescription: '"Potato Soft is my Nana''s favourite childhood snack, but a stroke
+    has left her bedridden. I want to give her one to cheer her up."'
+  taskReward: 5 Gems
+  taskStatus: 0/1 Potato Softs
+  numOfRequestedItems: 0
+  fullCat: {fileID: 0}
+  requestedItemPic: {fileID: 1327818573, guid: d213f26f392f9cc49a6a3d9a0d726775, type: 3}
+  headShot: {fileID: -1709001360, guid: 541fbe12f2c653745a3756114b52be04, type: 3}

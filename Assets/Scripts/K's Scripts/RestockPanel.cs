@@ -8,6 +8,7 @@ using TMPro;
 public class RestockPanel : MonoBehaviour
 {
     public ItemSO currentItem;
+    public GameManager gm;
     public TextMeshProUGUI itemDescription;
     public TMP_InputField enterAmmountText;
     public Image itemImage;
