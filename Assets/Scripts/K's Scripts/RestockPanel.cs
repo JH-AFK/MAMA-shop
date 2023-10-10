@@ -42,13 +42,24 @@ public class RestockPanel : MonoBehaviour
 
     public void RestockClicked()
     {
+        if (gm.activePanel)
+        {
+            gm.activePanel.SetActive(false);
+            gm.activeButton.GetComponent<Outline>().enabled = false;
+        }
         if (!restockPanel.activeInHierarchy)
         {
+            gameObject.GetComponent<Outline>().enabled = true;
+            gm.activePanel = restockPanel;
+            gm.activeButton = gameObject;
             BGM.PlayOneShot(feedbackAudio);
             restockPanel.SetActive(true);
         }
         else
         {
+            gameObject.GetComponent<Outline>().enabled = false;
+            gm.activeButton = null;
+            gm.activePanel = null;
             BGM.PlayOneShot(feedbackAudio);
             restockPanel.SetActive(false);
         }

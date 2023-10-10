@@ -60,13 +60,24 @@ public class TasksPanel : MonoBehaviour
 
     public void TaskMenuClicked()
     {
+        if (gm.activePanel)
+        {
+            gm.activePanel.SetActive(false);
+            gm.activeButton.GetComponent<Outline>().enabled = false;
+        }
         if (!taskPanel.activeInHierarchy)
         {
+            gameObject.GetComponent<Outline>().enabled = true;
+            gm.activePanel = taskPanel;
+            gm.activeButton = gameObject;
             BGM.PlayOneShot(feedbackAudio);
             taskPanel.SetActive(true);
         }
         else
         {
+            gameObject.GetComponent<Outline>().enabled = false;
+            gm.activePanel = null;
+            gm.activeButton = null;
             BGM.PlayOneShot(feedbackAudio);
             taskPanel.SetActive(false);
         }

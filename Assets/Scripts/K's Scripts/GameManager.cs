@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool inPopupMenu = false;
+    public GameObject activePanel;
+    public GameObject activeButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,4 +24,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScene");
     }
+
+    //Panel Management
+
 }
