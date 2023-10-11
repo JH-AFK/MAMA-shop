@@ -6,12 +6,12 @@ using TMPro;
 public class Clock : MonoBehaviour
 {
     public TextMeshProUGUI timeText;
-    public int time = 600;
-    private bool secondAdded = false;
+    public int time = 600; //actual time used
+    private bool minuteAdded = false;
     public bool is24hTime = false;
-    private int minute;
-    private int hour;
-    private string period;
+    private int minute = 0; //for display only
+    private int hour = 6; //for display only
+    private string period; //for display only
 
     // Start is called before the first frame update
     void Start()
@@ -23,34 +23,26 @@ public class Clock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!secondAdded)
+        if (!minuteAdded)
         {
             StartCoroutine(AddMinute());
         }
 
-        if (hour > 11)
+        if (is24hTime)
         {
-            period = "PM";
+            timeText.text = (hour > 9 ? hour.ToString() : "0" + hour) + " " + (minute < 10 ? "0" + minute : minute.ToString());
         }
         else
         {
-            period = "AM";
-        }
-
-        if (minute < 10)
-        {
-            timeText.text = hour + ":0" + minute + " " + period;
-        }
-        else
-        {
-            timeText.text = hour + ":" + minute + " " + period;
+            period = (hour > 11) ? period = "PM" : period = "AM";
+            timeText.text = (hour > 12 ? (hour - 12).ToString() : hour.ToString()) + ":" + (minute < 10 ? "0" + minute : minute ) + " " + period;
         }
         
     }
 
     IEnumerator AddMinute()
     {
-        secondAdded = true;
+        minuteAdded = true;
         yield return new WaitForSeconds(1);
         time += 1;
         minute = time % 100;
@@ -61,7 +53,7 @@ public class Clock : MonoBehaviour
             hour += 1;
             time = 100 * hour;
         }
-        secondAdded = false;
+        minuteAdded = false;
 
     }
 }
