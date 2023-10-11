@@ -45,7 +45,7 @@ public class Clock : MonoBehaviour
         minuteAdded = true;
         yield return new WaitForSeconds(1);
         time += 1;
-        minute = time % 100;
+        minute = ((time % 100) % 10 == 0? time%100 : minute);
         hour = time / 100;
         if (minute > 59)
         {

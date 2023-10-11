@@ -21,6 +21,6 @@ public class CurrencyManager : MonoBehaviour
     {
         coinText.text = coins.ToString();
         gemsText.text = gems.ToString();
-
+        coinText.color = (coins < 0 ? Color.red : Color.white);
     }
 }
