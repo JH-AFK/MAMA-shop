@@ -2662,6 +2662,7 @@ GameObject:
   - component: {fileID: 442977619}
   - component: {fileID: 442977621}
   - component: {fileID: 442977620}
+  - component: {fileID: 442977622}
   m_Layer: 5
   m_Name: ClockText
   m_TagString: Untagged
@@ -2786,6 +2787,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442977618}
   m_CullTransparentMesh: 1
+--- !u!114 &442977622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442977618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6a9f50ebc6e35499109c0beded6540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 0}
+  time: 600
+  is24hTime: 0
 --- !u!1 &443251937
 GameObject:
   m_ObjectHideFlags: 0
