@@ -34,7 +34,7 @@ public class Clock : MonoBehaviour
         }
         else
         {
-            period = (hour > 11) ? period = "PM" : period = "AM";
+            period = (hour > 11) ? "PM" : "AM";
             timeText.text = (hour > 12 ? (hour - 12).ToString() : hour.ToString()) + ":" + (minute < 10 ? "0" + minute : minute ) + " " + period;
         }
         
@@ -55,5 +55,10 @@ public class Clock : MonoBehaviour
         }
         minuteAdded = false;
 
+    }
+
+    public void ChangeTimeMode()
+    {
+        is24hTime = (!is24hTime ? true : false); //for yall military people
     }
 }
