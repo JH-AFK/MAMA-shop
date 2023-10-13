@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class TitleSceneManager : MonoBehaviour
 {
+    public GameObject[] canvases; //0 - Options Canvas, 1 - Credits Canvas
     public AudioSource BGM;
     public AudioClip clickSFX;
     public AudioClip meowSFX;
+    private GameObject activeCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,8 @@ public class TitleSceneManager : MonoBehaviour
     public void CreditsButton()
     {
         ButtonClickFeedback();
-        DisableButton();
+        canvases[1].SetActive(true);
+        activeCanvas = canvases[1];
     }
 
     public void QuitButton()
@@ -46,6 +49,22 @@ public class TitleSceneManager : MonoBehaviour
         ButtonClickFeedback();
         DisableButton();
         Application.Quit(); //Will make the quitting better
+    }
+
+    public void BackToMenu()
+    {
+        ButtonClickFeedback();
+        if (activeCanvas)
+        {
+            activeCanvas.SetActive(false);
+        }
+        else
+        {
+            for (int i = 0; i < canvases.Length; i++)
+            {
+                canvases[i].SetActive(false);
+            }
+        }
     }
 
     void ButtonClickFeedback()
